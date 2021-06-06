@@ -1,11 +1,13 @@
-
 console.log('####################################')
 console.log('####### Média do Aluno 2021! #######')
 console.log('####################################')
 
 let dados = true
 while (dados = prompt('\nDeseja calcular a média do aluno? (s) para Sim (n) para Não: ')) {
-  if (dados === 's') {
+  if (dados !== 's' && dados !== 'n') {
+    console.log('\nEntrada Invalida!')
+  }
+  else if (dados === 's') {
     let nome = prompt(`\nQual o nome do aluno? `)
     let n1 = parseFloat(prompt(`\nQual a primeira nota? `))
     let n2 = parseFloat(prompt(`Qual a segunda nota? `))
