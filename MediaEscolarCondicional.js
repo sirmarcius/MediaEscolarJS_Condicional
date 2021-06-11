@@ -14,11 +14,11 @@ while (dados = prompt('Deseja calcular a média do aluno? (s) para Sim (n) para 
   else if (dados === 's') {
     console.log('\n')
     let nome = prompt(`Qual o nome do aluno? `)
-    let n1 = parseFloat(prompt(`Qual a primeira nota? `))
-    let n2 = parseFloat(prompt(`Qual a segunda nota? `))
-    let n3 = parseFloat(prompt(`Qual a terceira nota? `))
-    let n4 = parseFloat(prompt(`Qual a quarta nota? `))
-    let media = (n1 + n2 + n3 + n4) / 4
+    let notaUm = parseFloat(prompt(`Qual a primeira nota? `))
+    let notaDois = parseFloat(prompt(`Qual a segunda nota? `))
+    let notaTres = parseFloat(prompt(`Qual a terceira nota? `))
+    let notaQuatro = parseFloat(prompt(`Qual a quarta nota? `))
+    let media = (notaUm + notaDois + notaTres + notaQuatro) / 4
 
     console.log(`\n` + `A média do aluno ${nome} é ${media}`)
 
